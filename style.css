@@ -36,7 +36,20 @@ header nav ul li a {
     text-transform: uppercase;
 }
 
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
 section {
-    min-height: 100%;
-    scroll-snap-align: start;
+    height: 100vh;
+}
+
+.sec1 {
+    background-color: yellow;
+}
+
+.sec2 {
+    background-color: green;
 }
