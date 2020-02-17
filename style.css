@@ -1,6 +1,12 @@
+/*===GERNERAL===*/
+
 * {
     padding: 0 0 0 0;
     margin: 0 0 0 0;
+}
+
+section {
+    height: 100vh;
 }
 
 html,
@@ -41,8 +47,4 @@ header nav ul li a {
 }
 
 
-/*===SECTION===*/
-
-section {
-    height: 100vh;
-}
+/*===SECTION 1===*/
