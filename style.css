@@ -1,21 +1,32 @@
 /*===GENERAL===*/
 
-
 h1 {
     margin: 0;
 }
 
+
 /*===HEADER===*/
+
 header {
     background-color: white;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
     z-index: 1;
     padding: 10px;
     display: block;
     margin: 0 5px 0 5px;
+    border-radius: 15px;
 }
 
+
 /*===NAV===*/
+
 nav {
     background-color: white;
+}
+
+h1,
+h2,
+h3,
+p {
+    font-family: 'Montserrat', sans-serif;
 }
