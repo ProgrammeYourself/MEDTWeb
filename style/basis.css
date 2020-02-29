@@ -6,16 +6,9 @@
 --------------------------------------------------------------
 */
 
+/* === ALL === */
 
-/*=== RESET ===*/
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
-
-/*=== GENEREAL ===*/
+/*= reset =*/
 
 * {
     margin: 0;
@@ -23,13 +16,37 @@
 }
 
 
-/*=== HEADER ===*/
+/*= general =*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: Poppins;
+}
+
+body {
+    background-color: #e8e8e8;
+    padding: 10px;
+}
+
+header {
+    background-color: lightgrey;
+}
+
+nav ul {
+    list-style: none;
+}
 
 
-/*=== NAV ===*/
+/* === INDEX.HTML === */
 
+/* === MEDIZIN.HTML === */
 
-/*=== MAIN ===*/
+/* === STRASSENVERKEHR.HTML === */
 
+/* === EISENBAHN:HTML === */
 
-/*=== FOOTER ===*/
+/* === KONTAK.HTML === */
