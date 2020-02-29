@@ -1,0 +1,11 @@
+/*
+========== Zentrales Stylesheet für unsere Website. ==========
+--------------------------------------------------------------
+       Autor [zentrale.css]: Andreas Sünder
+       Autor [detail.css]: Andreas Sünder
+       Inspiration: Julian Doppelhofer
+--------------------------------------------------------------
+*/
+
+@import url(basis.css);
+@import url(detail.css);
