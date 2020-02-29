@@ -9,17 +9,18 @@
 
 <body>
     <nav>
-        <h1>Kontaktseite</h1>
         <ul>
             <li>
                 <a href="index.html">Hauptseite</a>
             </li>
-            <li>Einsatzgebiete</li>
-            <ul>
-                <li><a href="medizin.html">Medizin</a></li>
-                <li><a href="straßenverkehr.html">Straßenverkehr</a></li>
-                <li><a href="eisenbahn.html">Eisenbahn</a></li>
-            </ul>
+            <li class="dropdown">
+                <a href="" class="dropbtn">Einsatzgebiete</a>
+                <div class="dropdown-content">
+                    <a href="medizin.html">Medizin</a>
+                    <a href="straßenverkehr.html">Straßenverkehr</a>
+                    <a href="eisenbahn.html">Eisenbahn</a>
+                </div>
+            </li>
             <li><a href="kontakt.html">Kontakt</a></li>
         </ul>
     </nav>
@@ -27,7 +28,7 @@
         <fieldset id="fieldset_newsletter">
             <legend>Newsletter</legend>
             <span class="fieldset_description">Möchten Sie über alle Änderungen auf dieser Seite informiert werden? So können Sie sich gleich hier unten für unseren Newsletter eintragen. Die News bekommen sie wöchentlich per E-Mail. Jederzeit widerrufbar.</span>
-            
+
             <form>
                 <table class="table_form">
                     <tr>
@@ -98,7 +99,7 @@
                 </table>
             </form>
             <span class="remark">Alle Felder, die mit einem Sternchen * versehen sind, müssen ausgefüllt werden.</span>
-            
+
         </fieldset>
     </main>
     <footer>

@@ -8,60 +8,62 @@
 </head>
 
 <body>
-    <header>
+    <!--<header>
         <h1>IT WebBase - Alles rund ums Thema IT!</h1>
         <span>Hier lernen Sie einige interessante Einsatzgebiete kennen, in denen die IT eine wichtige Rolle spielt!</span>
-    </header>
+    </header>-->
     <nav>
         <ul>
             <li>
                 <a href="index.html">Hauptseite</a>
             </li>
-            <li>Einsatzgebiete</li>
-            <ul>
-                <li><a href="medizin.html">Medizin</a></li>
-                <li><a href="straßenverkehr.html">Straßenverkehr</a></li>
-                <li><a href="eisenbahn.html">Eisenbahn</a></li>
-            </ul>
+            <li class="dropdown">
+                <a id="button">Einsatzgebiete</a>
+                <div class="dropdown-content">
+                    <a href="medizin.html">Medizin</a>
+                    <a href="straßenverkehr.html">Straßenverkehr</a>
+                    <a href="eisenbahn.html">Eisenbahn</a>
+                </div>
+            </li>
             <li><a href="kontakt.html">Kontakt</a></li>
         </ul>
     </nav>
     <main>
         <section id="section_top">
+            <h1>IT WebBase - Alles rund ums Thema IT!</h1>
             <h2>Die Zukunft liegt in der digitalen Evolution.</h2>
+            <p>Hier lernen Sie einige interessante Einsatzgebiete kennen, in denen die IT eine wichtige Rolle spielt!</p>
+            <button>Mehr lesen</button>
         </section>
 
-        <section id="section_medizin">
+        <section id="section_gebiete">
+            <h3>Straßenverkehr</h3>
+            <p class="subject_description">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+                sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+                et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            </p>
+            <img src="img/Straßenverkehr1.jpg" alt="Straßenverkehr" style="width: 320px; height: 240px;">
+
+            <h3>Eisenbahn</h3>
+            <p class="subject_description">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+                sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+                et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            </p>
+            <img src="img/Eisenbahn1.jpg" alt="Eisenbahn" style="width: 320px; height: 240px;">
+        </section>
+        <section id="section_gebitegroß">
             <h3>Medizin</h3>
             <p class="subject_description">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-                At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-                At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+                sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+                et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
             </p>
             <img src="img/Medizin1.jpg" alt="Medizin" style="width: 320px; height: 240px;">
         </section>
-
-        <section id="section_straßenverkehr">
-            <h3>Straßenverkehr</h3>
-            <p class="subject_description">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-                At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-                At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-            </p>
-            <img src="img/Straßenverkehr1.jpg" alt="Straßenverkehr" style="width: 320px; height: 240px;">
-        </section>
-
-        <section id="section_eisenbahn">
-            <h3>Eisenbahn</h3>
-            <p class="subject_description">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-                At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-                At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-            </p>
-            <img src="img/Eisenbahn1.jpg" alt="Eisenbahn" style="width: 320px; height: 240px;">
+        <section id="section_kontakt">
+            <p>Form</p>
         </section>
     </main>
     <footer>
