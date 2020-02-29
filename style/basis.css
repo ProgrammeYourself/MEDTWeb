@@ -1,12 +1,10 @@
 /*
 == Stylesheet für alle Seiten, oberflächliche  Formatierung ==
---------------------------------------------------------------
-       Autor: Andreas Sünder
-       Inspiration: Julian Doppelhofer
---------------------------------------------------------------
 */
 
+
 /* === ALL === */
+
 
 /*= reset =*/
 
@@ -29,24 +27,29 @@ html {
 
 body {
     background-color: #e8e8e8;
-    padding: 10px;
+    padding-top: 65px;
 }
 
 header {
     background-color: lightgrey;
 }
 
-nav ul {
-    list-style: none;
-}
-
 
 /* === INDEX.HTML === */
 
+section {
+    min-height: 100vh;
+    padding: 10px;
+}
+
+
 /* === MEDIZIN.HTML === */
+
 
 /* === STRASSENVERKEHR.HTML === */
 
+
 /* === EISENBAHN:HTML === */
+
 
 /* === KONTAK.HTML === */
