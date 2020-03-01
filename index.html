@@ -8,44 +8,42 @@
 </head>
 
 <body>
-    <!--<header>
+    <main>
+        <!--<header>
         <h1>IT WebBase - Alles rund ums Thema IT!</h1>
         <span>Hier lernen Sie einige interessante Einsatzgebiete kennen, in denen die IT eine wichtige Rolle spielt!</span>
     </header>-->
-    <nav>
-        <ul>
-            <li>
-                <a href="index.html">Hauptseite</a>
-            </li>
-            <li class="dropdown">
-                <a id="button">Einsatzgebiete</a>
-                <div class="dropdown-content">
-                    <a href="medizin.html">Medizin</a>
-                    <a href="straßenverkehr.html">Straßenverkehr</a>
-                    <a href="eisenbahn.html">Eisenbahn</a>
-                </div>
-            </li>
-            <li><a href="kontakt.html">Kontakt</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section class="index_sections" id="section_top">
-            <div style="display: flex; justify-content: center; align-items: center; height: 95vh;">
-                <div style="text-align: center;">
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Hauptseite</a>
+                </li>
+                <li class="dropdown">
+                    <a id="button">Einsatzgebiete</a>
+                    <div class="dropdown-content">
+                        <a href="medizin.html">Medizin</a>
+                        <a href="straßenverkehr.html">Straßenverkehr</a>
+                        <a href="eisenbahn.html">Eisenbahn</a>
+                    </div>
+                </li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+        <section class="index_sections" id="section_top" style="background-image: url(img/index_bg.jpg); background-attachment: fixed;">
+            <div style="display: flex; justify-content: center; align-items: center; height: 85vh;">
+                <div style="text-align: center; color: white;">
                     <h1 style="font-size: 70px;">IT WebBase - Alles rund ums Thema IT!</h1>
                     <h2 id="slogan" style="margin-bottom: 40px;">Die Zukunft liegt in der digitalen Evolution.</h2>
                     <p style="margin-bottom: 10px;">Hier lernen Sie einige interessante Einsatzgebiete kennen, in denen die IT eine wichtige Rolle spielt!</p>
-                    <button>Mehr lesen</button>
+                    <a href="#x"><button id="mehrlesen">Mehr lesen</button></a>
                 </div>
             </div>
         </section>
 
-        <div class="spacing"></div>
-
-        <section class="index_sections">
+        <section class="index_sections" id="x">
             <div style="float: left;">
-                <h3 class="section_h3" style="text-align: center;">Straßenverkehr</h3>
-                <p style="float: left;"><img src="img/Straßenverkehr1.jpg" alt="Straßenverkehr" class="section_img" style="width: 320px; height: 240px;"></p>
+                <h3 style="text-align: center;">Straßenverkehr</h3>
+                <p style="float: left;"><img src="img/Straßenverkehr1.jpg" alt="Straßenverkehr" style="width: 320px;"></p>
                 <p class="subject_description">
                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
                     sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
@@ -56,8 +54,8 @@
 
         <section class="index_sections">
             <div style="float: left; clear: left; color: white; background-color: #512bd4;">
-                <h3 class="section_h3" style="text-align: center;">Eisenbahn</h3>
-                <p style="float: right;"><img src="img/Eisenbahn1.jpg" alt="Eisenbahn" class="section_img" style="width: 320px; height: 240px;"></p>
+                <h3 style="text-align: center;">Eisenbahn</h3>
+                <p style="float: right;"><img src="img/Eisenbahn1.jpg" alt="Eisenbahn" style="width: 320px;"></p>
                 <p class="subject_description">
                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
                     sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
@@ -67,26 +65,33 @@
         </section>
         <section class="index_sections">
             <div style="float: left; clear: right;">
-                <h3 class="section_h3" style="text-align: center;">Medizin</h3>
-                <p style="float: left;"><img src="img/Medizin1.jpg" alt="Medizin" class="section_img" style="width: 320px; height: 240px;"></p>
-                <p class="subject_description">
+                <h3 style="text-align: center;">Medizin</h3>
+                <p style="float: left;"><img src="img/Medizin1.jpg" alt="Medizin" style="width: 320px;"></p>
+                <p class=" subject_description ">
                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
                     sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
                     dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
                 </p>
             </div>
         </section>
-        <section class="index_sections" id="section_kontakt">
-            <div style="clear: left;">
+        <section class="index_sections " id="section_kontakt ">
+            <div style="clear: left; ">
                 <p>Form</p>
             </div>
         </section>
     </main>
     <footer>
-        <p>Webseite von <b>Andreas Sünder</b> und <b>Julian Doppelhofer</b></p>
-        <address>
-            IT WebBase &middot; HTBLuVA Wien XX &middot; 2020
-        </address>
+        <div>
+            <p class="footer">
+                <a class="link-1" href="index.html">Startseite</a>
+                <a href="medizin.html">Medizin</a>
+                <a href="straßenverkehr.html">Straßenverkehr</a>
+                <a href="eisenbahn.html">Eisenbahn</a>
+                <a href="kontakt.html">Kontakt</a>
+            </p>
+            <p>IT WebBase &middot; HTBLuVA Wien XX</p>
+            <p>Andreas Sünder und Julian Doppelhofer &copy; 2020</p>
+        </div>
     </footer>
 </body>
 
