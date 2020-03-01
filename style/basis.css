@@ -23,12 +23,11 @@
 
 html {
     font-family: Poppins;
+    scroll-behavior: smooth;
 }
 
 body {
-    background-image: url('../img/index_bg.jpg/');
-    background-attachment: fixed;
-    padding-top: 10px;
+    padding-top: 53px;
 }
 
 header {
@@ -38,31 +37,44 @@ header {
 
 /* === INDEX.HTML === */
 
+main {
+    min-height: calc(100vh - 22.8vh);
+}
+
 #section_top {
-    min-height: 90vh;
+    min-height: 100vh;
 }
 
-.spacing {
-    opacity: 1.0;
-    height: 25vh;
-    clear: both;
-}
-
-.index_sections {
-    background-color: white;
-}
-
-.index_sections > div {
+.index_sections>div {
     padding: 20px;
     margin: 30px 0px;
 }
 
-.section_img {
-    margin: 0 10px;
+h3 {
+    font-size: 50px;
 }
 
-.section_h3 {
-    font-size: 50px;
+img {
+    padding-right: 25px;
+}
+
+#mehrlesen {
+    color: white !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: blue;
+    padding: 20px;
+    border: 0px solid;
+    border-radius: 10px;
+    display: inline-block;
+    transition: all 0.4s ease 0s;
+}
+
+#mehrlesen:hover {
+    color: #ffffff !important;
+    background: #f6b93b;
+    border-radius: 20px;
+    transition: all 0.4s ease 0s;
 }
 
 

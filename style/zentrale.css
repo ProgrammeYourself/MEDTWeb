@@ -2,9 +2,11 @@
    ======= Zentrales Stylesheet für unsere Website. =======
 */
 
-/* Google Fonts */
-@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 
+/* Google Fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 @import url(basis.css);
 @import url(detail.css);
 @import url(header.css);
+@import url(footer.css);
