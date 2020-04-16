@@ -13,6 +13,20 @@
             background-position: left center, right center, center top;
             background-size: 33% 100%, 33% 100%, 35% 100%;
         }
+
+        table,
+        td,
+        th {
+            border: 2px solid black;
+        }
+
+        #main-content table img {
+            margin: 8px 8px 0 8px;
+        }
+
+        .sig_desc {
+            padding: 5px;
+        }
     </style>
 
 </head>
@@ -21,7 +35,8 @@
     <main>
         <header id="header_eisenbahn">
             <div style="display: flex; justify-content: center; align-items: center; height: 50vh;">
-                <div style="text-align: center; background: linear-gradient(180deg,#cc1212 30.12%,#e93d1f 192.47%); padding: 0 20px 0 20px; box-shadow: 0px 0px black;">
+                <div
+                    style="text-align: center; background: linear-gradient(180deg,#cc1212 30.12%,#e93d1f 192.47%); padding: 0 20px 0 20px; box-shadow: 0px 0px black;">
                     <h1 style="font-size: 62px; color: white;">IT bei der Eisenbahn</h1>
                 </div>
             </div>
@@ -42,6 +57,146 @@
                 <li><a href="kontakt.html">Kontakt</a></li>
             </ul>
         </nav>
+
+        <section id="main-content">
+            <div>
+                <h2>Stellwerke</h2>
+                <p>
+                    Wo früher alte Spurplanstellwerke verwendet wurden, stehen heute eine moderne Zentrale mit Unmengen
+                    an
+                    Computer, Servern und sonstigen Rechnern.
+                    Während früher in Bahnhöfen die Fahrstraßen für alle Züge per Hand via Knopfdruck gestellt wurden,
+                    geschieht dies heute fast halb-automatisch.
+                    Der Computer hat in den letzten Jahren den Menschen haufenweise Arbeit abgenommen, der Mensch selbst
+                    dient nur zur “Kontrolle”.
+                </p>
+
+                <h3>Warum hat sich so viel geändert?</h3>
+                <p>
+                    Nun, damals gab es eben keine modernen, computergesteuerten Stellwerke, sondern z.B.
+                    relaisgesteuerte Spurplanstellwerke. Bei diesen waren die Gleise aus der Wirklichkeit auf einem
+                    Brett als Linien eingezeichnet (daher Spurplan) und mit Kontrolllampen, Knöpfen etc. ausgestattet
+                    und anhand des Gleisplanes richtig verbunden (daher Spurplan). Um eine Fahrstraße für einen Zug
+                    einzustellen, musste der Fahrdienstleiter per Knopfdruck zwei Signale auswählen und die Weichen
+                    haben sich automatisch gestellt. In diesem System war auch schon eine gewisse Automatik integriert,
+                    die Fahrstraßen nach Passieren des Zuges auflöste und für andere frei machte.
+                    Damals war es üblich, dass fast jeder Bahnhof ein Stellwerk hatte, somit musste bei Verspätungen zu
+                    den nächsten Bahnhöfen telefoniert werden um diese zu informieren. Mit dem Anfang des
+                    Computerzeitalters wurden viele Stellwerke zusammengefasst und am Rechner in einer Zentrale aus
+                    ferngesteuert. Solche Zentralen nennt man heute (ESTW Elektronisches Stellwerk). Einige große
+                    Anlagen stehen beispielsweise in Salzburg, Wien [Praterstern, Hbf., Stadlau], Innsbruck usw.
+                </p>
+
+                <h3>Was steckt eigentlich alles dahinter?</h3>
+                <p>
+                    Die Software, die eben für Elektronische Stellwerke konzipiert wurde, ist ziemlich komplex
+                    aufgebaut. Sie muss in der Lage sein, Informationen über die Strecke (gestellte Signale, Weichen,
+                    Besetzung der Fahrstraßen, Zugnummern usw.) aufzunehmen, zu verarbeiten und dem Fahrdienstleiter
+                    grafisch anzuzeigen, als auch die Bedienhandlungen des Benutzers der Strecke weiterzugeben. Will er
+                    eine Fahrstraße zwischen zwei Punkten einstellen, so muss das System anhand der hochkomplexen
+                    Fahrstraßenlogik herausfinden, wie die Weichen und Signale zwischen diesen gestellt werden müssen.
+                    Nach dem Passieren des Zuges wird dieser Weg wieder für andere Züge freigemacht. Bei einigen
+                    Stellwerken ist dieser Betrieb etwas mehr automatisiert:
+                    Jedem Zug wird eine Nummer zugewiesen. Dessen Start- Zielort, Zwischenhalte, Fahrzeiten usw. ist dem
+                    System bekannt und versucht, alle Fahrstraßen automatisch und optimal einzustellen. Der
+                    Fahrdienstleiter wirft dabei ein Auge auf das, was der Rechner tut und kann dies auf dem Monitor
+                    verfolgen. Wird es einmal kritisch, weil z.B. sich zu viele Verspätungen angehäuft haben, dass der
+                    Computer nicht mehr weiter weiß, so muss der Benutzer selbst eingreifen und den Betrieb versuchen zu
+                    regeln.
+                    Um Geld zu sparen, wurden auch häufig Schnittstellen an älteren Stellwerken installiert und die
+                    Spurpläne durch Monitore ersetzt. Die Bedienung erfolgt rein auf dem Computer, die Befehle werden
+                    aber über die Schnittstelle an die Relaistechnik weitergegeben, die den restlichen Part zum Stellen
+                    der Weichen, Signale etc. übernimmt. Umgekehrt werden auch die Informationen des Stellwerks richtig
+                    für den Rechner “übersetzt”.
+                </p>
+
+                <h2>Zugsicherungssysteme</h2>
+                <h3>PZB</h3>
+                <p>
+                    Ein kleiner Exkurs am Rande zu dem österreichischem Zugbeeinflussungssystem namens “PZB”. Das steht
+                    für “Punktförmige Zugbeeinflussung”. Dieses steht momentan österreichweit im Einsatz, wird aber bald
+                    vom sogenannten ETCS (siehe unten) abgelöst.
+                </p>
+
+                <h4>Signalkunde</h4>
+                <p>
+                    Informationen über (nicht) freie Fahrstraßen bekommt der Lokführer durch Hauptsignale angezeigt.
+                    Diese stehen meistens bei Bahnhöfen, sind aber auch auf freier Strecke zu finden. Ein Abschnitt
+                    zwischen
+                    zwei Hauptsignalen wird auch Blockabschnitt genannt.
+                    Die Stellung eines Hauptsignal wird meistens 1000m davor von einem Vorsignal angekündigt, damit der
+                    Lokführer auch rechtzeitig bremsen kann.
+                </p>
+
+                <table id="hs_signals" style="border-collapse: collapse; width: 50%;">
+                    <thead>
+                        <tr style="background: linear-gradient(180deg,#cc1212 30.12%,#e93d1f 192.47%);">
+                            <th colspan="4">Hauptsignale</th>
+                        </tr>
+                    </thead>
+                    <tbody style="background-color: lightgray;">
+                        <tr>
+                            <td>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/AT_HS_A_0.svg/60px-AT_HS_A_0.svg.png"
+                                    alt="HS_Halt">
+                            </td>
+                            <td>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/AT_HS_A_1.svg/60px-AT_HS_A_1.svg.png"
+                                    alt="HS-Frei">
+                            </td>
+                            <td>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/AT_HS_A_3.svg/60px-AT_HS_A_3.svg.png"
+                                    alt="HS_40">
+                            </td>
+                            <td>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/AT_HS_A_2.svg/60px-AT_HS_A_2.svg.png"
+                                    alt="HS_60">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="sig_desc">Halt</td>
+                            <td class="sig_desc">Freie Fahrt mit erlaubter Streckenhöchstgeschwindigkeit</td>
+                            <td class="sig_desc">Freie Fahrt, max. 40 km/h ab diesem Signal</td>
+                            <td class="sig_desc">Freie Fahrt, max. 60 km/h ab diesem Signal</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table id="vs_signals" style="border-collapse: collapse; width: 50%;">
+                    <thead>
+                        <tr style="background: linear-gradient(180deg,#cc1212 30.12%,#e93d1f 192.47%);">
+                            <th colspan="4">Vorsignale</th>
+                        </tr>
+                    </thead>
+                    <tbody style="background-color: lightgray;">
+                        <tr>
+                            <td>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/AT_VS_A_0.svg/60px-AT_VS_A_0.svg.png"
+                                    alt="VS_Halt">
+                            </td>
+                            <td>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/AT_VS_A_1.svg/60px-AT_VS_A_1.svg.png"
+                                    alt="VS_Frei">
+                            </td>
+                            <td>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/AT_VS_A_3.svg/60px-AT_VS_A_3.svg.png"
+                                    alt="VS_40">
+                            </td>
+                            <td>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/AT_VS_A_2.svg/60px-AT_VS_A_2.svg.png"
+                                    alt="VS_60">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="sig_desc">Halt erwarten</td>
+                            <td class="sig_desc">Hauptsignal zeigt “Freie Fahrt”</td>
+                            <td class="sig_desc">Hauptsignal zeigt “Freie Fahrt mit max. 40 km/h”</td>
+                            <td class="sig_desc">Hauptsignal zeigt “Freie Fahrt mit max. 60 km/h”</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
 
     </main>
     <footer>
