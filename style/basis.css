@@ -49,13 +49,6 @@ main {
     padding: 20px;
 }
 
-h3 {
-    font-size: 50px;
-}
-
-img {
-    padding: 0 25px;
-}
 
 #mehrlesen {
     color: white !important;
@@ -85,5 +78,10 @@ img {
 
 /* === EISENBAHN:HTML === */
 
+#main-content > div {
+    background-color: #e8e8e8;
+    margin: 0 10px 10px 10px;
+    padding: 10px;
+}
 
 /* === KONTAK.HTML === */
