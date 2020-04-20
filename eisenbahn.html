@@ -14,18 +14,41 @@
             background-size: 33% 100%, 33% 100%, 35% 100%;
         }
 
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin: 10px 0 10px 0;
+        }
+
+        p,
+        li {
+            line-height: 2em;
+        }
+
+        table {
+            margin: 10px 0 10px 0;
+        }
+
         table,
         td,
         th {
             border: 2px solid black;
+            padding: 5px;
         }
 
         #main-content table img {
             margin: 8px 8px 0 8px;
         }
 
-        .sig_desc {
-            padding: 5px;
+        .img_hover {
+            display: none;
+        }
+
+        img:hover~.img_hover {
+            display: block;
         }
     </style>
 
@@ -154,10 +177,10 @@
                             </td>
                         </tr>
                         <tr>
-                            <td class="sig_desc">Halt</td>
-                            <td class="sig_desc">Freie Fahrt mit erlaubter Streckenhöchstgeschwindigkeit</td>
-                            <td class="sig_desc">Freie Fahrt, max. 40 km/h ab diesem Signal</td>
-                            <td class="sig_desc">Freie Fahrt, max. 60 km/h ab diesem Signal</td>
+                            <td>Halt</td>
+                            <td>Freie Fahrt mit erlaubter Streckenhöchstgeschwindigkeit</td>
+                            <td>Freie Fahrt, max. 40 km/h ab diesem Signal</td>
+                            <td>Freie Fahrt, max. 60 km/h ab diesem Signal</td>
                         </tr>
                     </tbody>
                 </table>
@@ -188,10 +211,198 @@
                             </td>
                         </tr>
                         <tr>
-                            <td class="sig_desc">Halt erwarten</td>
-                            <td class="sig_desc">Hauptsignal zeigt “Freie Fahrt”</td>
-                            <td class="sig_desc">Hauptsignal zeigt “Freie Fahrt mit max. 40 km/h”</td>
-                            <td class="sig_desc">Hauptsignal zeigt “Freie Fahrt mit max. 60 km/h”</td>
+                            <td>Halt erwarten</td>
+                            <td>Hauptsignal zeigt “Freie Fahrt”</td>
+                            <td>Hauptsignal zeigt “Freie Fahrt mit max. 40 km/h”</td>
+                            <td>Hauptsignal zeigt “Freie Fahrt mit max. 60 km/h”</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p>
+                    Sollte ein Vorsignal “Halt erwarten”, “Frei mit 40km/h” oder “Frei mit 60 km/h” anzeigen, so muss
+                    der Lokführer das Signal mit der Wachsamkeitstaste bestätigen und abbremsen. Unter dem Vorsignal
+                    befindet sich ein Magnet, der eben in den oben genannten Situationen eingeschalten wird. Überfährt
+                    der Zug diesen Magneten, so merkt das der Zug und der Lokführer hat genau 4 sec. Zeit, eben diese
+                    Taste zu betätigen. Tut er dies nicht, so greift das System ein und bremst den Zug sicherheitshalber
+                    mit höchster Bremsstufe auf 0 km/h ab (= Zwangsbremsung). Diese Bremskurve wird vom System
+                    überwacht, hält sich der Lokführer nicht daran, erhält er eine Zwangsbremsung. Diese kann
+                    (normalerweise) nicht unterbrochen werden.
+                    Hier kommt auch der Begriff “punktförmig” in Spiel. im obigen Abschnitt habe ich den Begriff
+                    “Magneten” erwähn. Dieser spielt für diese Art von Zugbeeinflussung eine zentrale Rolle - denn nur
+                    durch diese erfährt das System von den realen Umständen (Stellung der Signale) Es gibt nicht nur
+                    Magneten bei Vorsignalen, auch ~250m vor dem Hauptsignal und direkt beim Hauptsignal. Diese sorgen
+                    dafür, dass der Zug bei einem roten Signal auch stehen bleibt bzw. genug abgebremst hat. Denn sollte
+                    das Signal zwischenzeitlich von Rot auf Grün springen, so heißt das nicht automatisch, dass der Zug
+                    wieder beschleunigen darf. In erster Linie muss der Lokführer das Signal erst sehen können, bis er
+                    überhaupt was machen darf. Sollte sich irgendetwas zwischen Vor- und Hauptsignal ändern, so wisse
+                    das der Zug, aber nicht sofort das System, sondern erst kurz vor bzw. am Hauptsignal. Springt das
+                    Signal zu spät auf Grün, darf der Lokführer nur bis auf eine bestimmte Geschwindigkeit (meistens 85
+                    km/h) beschleunigen und warten, denn das System weiß vom Grün Werden noch gar nichts, bis sich diese
+                    Überwachung auflöst und der wieder die Streckenhöchstgeschwindigkeit ausfahren kann.
+                    Dies ist nicht immer die optimalste Fahrweise. Auf der S-Bahn Stammstrecke in Wien ergibt sich bei
+                    vielen Zügen bei dichten Intervallen ein Mischmasch aus Bremsen und Gasgeben. Aus diesem Grund hat
+                    man ein (hoffentlich) besseres System eingeführt, das ETCS.
+                </p>
+
+                <h3>ETCS</h3>
+                <p>
+                    Diese Abkürzung steht für “European Train Control System”. Es soll einheitlich in Europa eingesetzt
+                    werden und die vielen unterschiedlichen, nationalen Zugbeeinflussungssysteme ablösen, um z.B.
+                    grenzüberschreitende Fahrten zu erleichtern oder um auch die Intervalle auf Strecken zu erhöhen. Es
+                    befindet sich momentan noch im Ausbau und wird noch weiterentwickelt, ist aber bereits auf einigen
+                    Strecken (auch in Österreich) im Einsatz.<br>
+
+                    <strong>Was hat das jetzt mit IT zu tun?</strong><br>
+
+                    Nun, das kommt erst. Das ETCS ist nämlich ein linienförmiges Zugbeeinflussungssystem, d.h. der Zug
+                    wird während der Fahrt kontinuierlich überwacht (Einhaltung der Höchstgeschwindigkeit auf allen
+                    Abschnitten usw.). Je nach Ausführung ist das Aufstellen von Lichtsignalen entlang der Strecke
+                    notwendig oder nicht. Beim sogenannten ETCS Level 2 ist dies nicht nötig, alle Informationen, die
+                    man den Signalen entnehmen könnte, wurden auf ein Display im Führerraum verlagert. Springt also
+                    beispielsweise ein Signal zwischenzeitlich von Rot auf Grün, so erfährt das On-Board-System
+                    rechtzeitig davon, da es sich im ständigen Funkkontakt mit der Zentrale befindet.
+                    Bei der PZB muss der Lokführer die aktuell erlaubte Höchstgeschwindigkeit vom Buchfahrplan bzw. von
+                    den entlang der Strecke aufgestellten Schilder ablesen. Beim ETCS wurde das u.a. aufs
+                    Führerraum-Display verlegt.
+
+                    <img src="img/ETCS_Display.png" alt="ETCS_Display"
+                        style="float: right; width: 400px; height: 300px; margin: 10px;">
+
+                    Beim ETCS arbeiten folgende Komponenten zusammen:
+                    <ul style="margin-left: 20px;">
+                        <li>
+                            ETCS-Streckenzentrale (auch “Radio-Block-Center (RBC)” genannt) - überwacht alle Züge;
+                            erhält Daten
+                            des Stellwerks über eingestellte Fahrstraßen, sendet dann die benötigten Informationen an
+                            den Zug.
+                            Stellwerk - ist direkt mit dem Stellwerk verbunden, kümmert sich um die Fahrstraßen.
+                        </li>
+                        <li>
+                            GSM-R (steht für “Global System for Mobile Communication - Rail”) - ist das globale Funknetz
+                            im
+                            ETCS. Die Daten, die vom RBC an die Züge gesendet werden, werden per Funk an den Zug
+                            übertragen, der
+                            sie dann auswertet.
+                        </li>
+                        <li>
+                            GSM-R (steht für “Global System for Mobile Communication - Rail”) - ist das globale Funknetz
+                            im
+                            ETCS. Die Daten, die vom RBC an die Züge gesendet werden, werden per Funk an den Zug
+                            übertragen, der
+                            sie dann auswertet.
+                        </li>
+                        <li>
+                            Eurobalise(n): Diese Komponenten sind entlang der Strecke zwischen den Schienen verlegt und
+                            dienen
+                            u.a. als Ortsreferenz. Fährt ein Zug über eine solche Balise, so kann daraus seine Position
+                            ermittelt werden.
+                        </li>
+                    </ul>
+
+                    <div style="float: right; margin: 10px;">
+                        <img src="img/Eurobalise.jpg" alt="Eurobalise"
+                            style="width: 300px; height: 300px;">
+                        <br>
+                        <div class="img_hover"style="font-size: 8pt">
+                            Von <a href="//commons.wikimedia.org/wiki/File:ETCS_beacon_Lutherstadt_Wittenberg.jpg"
+                                title="File:ETCS beacon Lutherstadt Wittenberg.jpg">ETCS_beacon_Lutherstadt_Wittenberg.jpg</a>:
+                            <br>bigbug21derivative work: <br><a href="//commons.wikimedia.org/wiki/User:Guidod"
+                                title="User:Guidod">Guidod</a> (<a href="//commons.wikimedia.org/wiki/User_talk:Guidod"
+                                title="User talk:Guidod"><span class="signature-talk">talk</span></a>) - <a
+                                href="//commons.wikimedia.org/wiki/File:ETCS_beacon_Lutherstadt_Wittenberg.jpg"
+                                title="File:ETCS beacon Lutherstadt Wittenberg.jpg"><br>ETCS_beacon_Lutherstadt_Wittenberg.jpg</a>,
+                            <a href="https://creativecommons.org/licenses/by-sa/2.5"
+                                title="Creative Commons Attribution-Share Alike 2.5"><br>CC BY-SA 2.5</a>, <a
+                                href="https://commons.wikimedia.org/w/index.php?curid=11325929">Link</a>
+                        </div>
+                    </div>
+
+
+                    Die Daten vom und an den Zug werden mittels Messages mit den darin enthaltenen Packets übertragen,
+                    die dann die erforderlichen Informationen enthalten. Zum Beispiel:
+                </p>
+                <table id="etcs_data_toTrain" style="border-collapse: collapse; width: 50%;">
+                    <thead>
+                        <tr style="background: linear-gradient(180deg,#cc1212 30.12%,#e93d1f 192.47%);">
+                            <th colspan="2">Von der Zentrale an den Zug</th>
+                        </tr>
+                        <tr>
+                            <th>Message/Packet</th>
+                            <th>Beschreibung</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Message 3/Movement Authority</td>
+                            <td>
+                                Jeder Zug braucht eine sogenannte Movement Authority, zu Deutsch “Fahrterlaubnis”. Diese
+                                wird einem im Normalfall von der aktuellen Position bis zu einem Endpunkt gegeben und
+                                ggf. verlängert. In dieser sind auch wichtige Pakete wie <i>Packet21/Gradient
+                                    Profile</i> oder
+                                <i>Packet27/International Static Speed Profile</i> mit Streckendaten enthalten.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Message 28/SH Authorised</td>
+                            <td>
+                                Mit dieser Message wird dem Zug erlaubt, zu rangieren.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Packet 21/Gradient Profile</td>
+                            <td>
+                                In diesem Packet ist das Neigungsprofil der Strecke verankert.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Packet 45/Radio Network registration</td>
+                            <td>
+                                Dieses Packet fordert das Fahrzeug auf, sich bei einem Funknetzwerk anzumelden. Das ist
+                                so zu verstehen, wie die Auswahl des Netzbetreibers beim Einschalten des Handys.
+                                Allerdings gibt es bei GSM-R kein Roaming, der Anbieter wird explizit angegeben. Von
+                                einem Profil ist hier natürlich keine Rede.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Message 16/Unconditional Emergency Stop</td>
+                            <td>
+                                Diese Message enthält einen Ort, an dem der Zug unverzüglich anzuhalten halt (bedingt
+                                durch einen Notfall). Die Fahrterlaubnis wird in einigen Fällen bis dorthin gekürzt.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table id="etcs_data_fromTrain" style="border-collapse: collapse; width: 50%;">
+                    <thead>
+                        <tr style="background: linear-gradient(180deg,#cc1212 30.12%,#e93d1f 192.47%);">
+                            <th colspan="2">Vom Zug an die Zentrale</th>
+                        </tr>
+                        <tr>
+                            <th>Message/Packet</th>
+                            <th>Beschreibung</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Message 132/MA Request</td>
+                            <td>
+                                Kurz vor dem Ende einer Fahrterlaubnis kann der Zug eine Verlängerung bzw. eine neue
+                                anfordern.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Packet 0/Position Report</td>
+                            <td>
+                                Enthält einige Positionsdaten des Zuges, damit das RBC seinen Standort weiß.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Packet 11/Validated train data</td>
+                            <td>
+                                Die korrekten, vom Lokführer eingegebenen Zugdaten (darunter zählen Zugkategorie,
+                                Höchstgeschwindigkeit des Zuges usw.)
+                            </td>
                         </tr>
                     </tbody>
                 </table>
