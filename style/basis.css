@@ -30,13 +30,58 @@ body {
     padding-top: 53px;
 }
 
-header {
-    background-color: lightgrey;
+.subpage_top h1 {
+    margin: 10px 0;
+}
+
+.subpage_main h2,
+.subpage_main h3,
+.subpage_main h4,
+.subpage_main h5,
+.subpage_main h6 {
+    margin: 20px 0;
+}
+
+h1 {
+    font-size: 65px;
 }
 
 h2 {
     font-size: 40px;
 }
+
+h3 {
+    font-size: 25px;
+}
+
+h4 {
+    font-size: 17px;
+}
+
+
+/*= section styles =*/
+
+.subpage_top>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+.subpage_top>div>div {
+    text-align: center;
+    box-shadow: 8px 8px black;
+    padding: 0 20px 0 20px;
+}
+
+.subpage_top>div>div>h1 {
+    font-size: 62px;
+}
+
+.subpage_main>div {
+    line-height: 2em;
+}
+
 
 /* === INDEX.HTML === */
 
@@ -52,6 +97,11 @@ main {
     padding: 20px;
 }
 
+.subpage_main>div {
+    background-color: #e8e8e8;
+    margin: 0 10px 10px 10px;
+    padding: 10px;
+}
 
 #mehrlesen {
     color: white !important;
@@ -71,20 +121,3 @@ main {
     border-radius: 20px;
     transition: all 0.4s ease 0s;
 }
-
-
-/* === MEDIZIN.HTML === */
-
-
-/* === STRASSENVERKEHR.HTML === */
-
-
-/* === EISENBAHN:HTML === */
-
-#main-content > div {
-    background-color: #e8e8e8;
-    margin: 0 10px 10px 10px;
-    padding: 10px;
-}
-
-/* === KONTAK.HTML === */

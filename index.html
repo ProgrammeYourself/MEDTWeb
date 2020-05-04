@@ -6,10 +6,6 @@
     <link href="style\zentrale.css" rel="stylesheet">
     <meta charset="utf-8">
     <style>
-        h3 {
-            font-size: 50px;
-        }
-
         img {
             padding: 0 25px;
         }
@@ -17,27 +13,24 @@
 </head>
 
 <body>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">Hauptseite</a>
+            </li>
+            <li class="dropdown">
+                <a id="button">Einsatzgebiete</a>
+                <div class="dropdown-content">
+                    <a href="medizin.html">Medizin</a>
+                    <a href="straßenverkehr.html">Straßenverkehr</a>
+                    <a href="eisenbahn.html">Eisenbahn</a>
+                </div>
+            </li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+
     <main>
-        <!--<header>
-        <h1>IT WebBase - Alles rund ums Thema IT!</h1>
-        <span>Hier lernen Sie einige interessante Einsatzgebiete kennen, in denen die IT eine wichtige Rolle spielt!</span>
-    </header>-->
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html">Hauptseite</a>
-                </li>
-                <li class="dropdown">
-                    <a id="button">Einsatzgebiete</a>
-                    <div class="dropdown-content">
-                        <a href="medizin.html">Medizin</a>
-                        <a href="straßenverkehr.html">Straßenverkehr</a>
-                        <a href="eisenbahn.html">Eisenbahn</a>
-                    </div>
-                </li>
-                <li><a href="kontakt.html">Kontakt</a></li>
-            </ul>
-        </nav>
         <section class="index_sections" id="section_top" style="background-image: url(img/index_bg.jpg); background-attachment: fixed;">
             <div style="display: flex; justify-content: center; align-items: center; height: 85vh;">
                 <div style="text-align: center; color: white;">
@@ -72,6 +65,7 @@
                 </p>
             </div>
         </section>
+
         <section class="index_sections">
             <div style="float: left; clear: right;">
                 <h3 style="text-align: center;">Medizin</h3>
@@ -83,12 +77,11 @@
                 </p>
             </div>
         </section>
-        <section class="index_sections " id="section_kontakt ">
-            <div style="clear: left; ">
-                <p>Form</p>
-            </div>
-        </section>
+
+        <div style="clear: left;"></div>
+
     </main>
+
     <footer>
         <div>
             <p class="footer">

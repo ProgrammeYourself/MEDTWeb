@@ -5,76 +5,58 @@
     <title>IT WebBase - Alles rund ums Thema IT!</title>
     <link href="style\zentrale.css" rel="stylesheet">
     <meta charset="utf-8">
-	<style>
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            margin: 10px 0 10px 0;
-        }
-
-        p {
-            line-height: 2em;
-        }
-	</style>
 </head>
 
 <body>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html ">Hauptseite</a>
+            </li>
+            <li class="dropdown ">
+                <a href=" " class="dropbtn ">Einsatzgebiete</a>
+                <div class="dropdown-content ">
+                    <a href="medizin.html ">Medizin</a>
+                    <a href="straßenverkehr.html ">Straßenverkehr</a>
+                    <a href="eisenbahn.html ">Eisenbahn</a>
+                </div>
+            </li>
+            <li><a href="kontakt.html ">Kontakt</a></li>
+        </ul>
+    </nav>
+
     <main>
-        <header style="background-image: url(img/Straßenverkehr2.jpg);">
-            <div style="display: flex; justify-content: center; align-items: center; height: 50vh;">
-                <div style="text-align: center; background: linear-gradient(180deg,#12cc40 30.12%,#0ecf58 192.47%); padding: 0 20px 0 20px; box-shadow: 8px 8px black;">
-                    <h1 style="font-size: 70px; color: white;">IT im Straßenverkehr</h1>
+        <section class="subpage_top" id="straßenverkehr_top" style="background-image: url(img/Straßenverkehr2.jpg);">
+            <div>
+                <div style="background: linear-gradient(180deg,#12cc40 30.12%,#0ecf58 192.47%);">
+                    <h1 style="color: white;">IT im Straßenverkehr</h1>
                 </div>
             </div>
-        </header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html ">Hauptseite</a>
-                </li>
-                <li class="dropdown ">
-                    <a href=" " class="dropbtn ">Einsatzgebiete</a>
-                    <div class="dropdown-content ">
-                        <a href="medizin.html ">Medizin</a>
-                        <a href="straßenverkehr.html ">Straßenverkehr</a>
-                        <a href="eisenbahn.html ">Eisenbahn</a>
-                    </div>
-                </li>
-                <li><a href="kontakt.html ">Kontakt</a></li>
-            </ul>
-        </nav>
-        <section id="main-content">
+        </section>
+
+        <section class="subpage_main">
             <div>
-                <h2 style="font-size: 50px; ">Vernetzte Autos</h2>
-				<p>
-					Derzeit gibt es keine rechtliche oder allgemein anerkannte Definition der deutschen oder englischen Begriffe "vernetztes Fahrzeug" oder "vernetztes Auto".
-					Im Journal of Data Processing wird das vernetzte Auto wie folgt definiert: Das Automobil der Zukunft ist ein rollender Computer, der mit der Umwelt, der Infrastruktur
-					und dem Internet vernetzt ist. Dies beinhaltet die Offenlegung einer großen Anzahl personenbezogener Daten. In der Zeitschrift Kriminalistik heißt es: 
-					Die Ausstattung eines Fahrzeugs mit mindestens einem Modul, das die verschiedenen Sensoren und / oder Speicherkapazitäten im Fahrzeug mit mindestens einem anderen Gerät,
-					Netzwerk oder Dienst außerhalb des Fahrzeugs verbindet. Dies umfasst Verbindungen zum Internet, zu anderen Fahrzeugen (Car-to-Car), zu Häusern (Car-to-Home),
-					zu Herstellern oder anderen Unternehmen (Car-to-Enterprise) oder zu anderen Infrastrukturkomponenten (Car-to-Enterprise) X). "In den letzten Jahren konzentrierten sich die
-					Bemähungen im Bereich des vernetzten Straßenverkehrs hauptsächlich auf die Bereitstellung der Infrastruktur und die Standardisierung der V2X-Technologie.
-					"Es wird jetzt klar, dass wir darüber hinausgehen, weil in Fahrzeugen ein immer breiteres Spektrum an Kommunikationstechnologien präsentiert wird, so dass derzeit konkrete
-					Anwendungsszenarien für Endverbraucher im Fokus stehen", sagte Peter Ummenhofer, Leiter des ITS-Geschäfts Einheit bei Kapsch TrafficCom futurezone. Kapsch war auch auf dem
-					ITS-Weltkongress in Detroit mit einer umfassenden V2X-Vertriebsmanagementlesung vertreten. Ummenhofer zufolge lautete der Tenor des ITS-Weltkongresses,
-					dass kooperative Systeme wie V2X heute als Basistechnologie gelten. V2X dient als Grundlage für die Erstellung von In-Car-Apps für vernetzte Fahrzeuge oder
-					Verkehrsmanagementlösungen. Autonome Fahrzeuge werden teilweise auch auf V2X basieren.Mit den Innovationen, die V2X bringen wird, stellt sich die Frage, wie Treiber solche
-					V2X-Dienste überhaupt akzeptieren und ob diese zusätzlichen Funktionen viele, insbesondere ältere Treiber, nicht überwältigen werden.
-					"Das klingt alles viel komplizierter als es tatsächlich ist", sagt Ummenhofer. "Man muss definitiv kein IT-Techniker sein, um diese Dienste nutzen zu können."
-					Ein Beispiel: In der kalten Jahreszeit fahren Sie auf einer Straße. Die Fahrbahn ist einige Kilometer weiter vereist. Ein Auto, dessen Sensoren das Glatteis bereits
-					registriert haben, kommt auf Sie zu und warnt mit V2X, dass auf dem nächsten Straßenabschnitt Rutschgefahr besteht. Dies wird dem Fahrer durch einen subtilen Hinweis angezeigt.
-					"Von der gesamten V2X-Technologie, die dahinter steckt, merkt man kaum etwas als Lenker", fasst Ummenhofer zusammen. Um die Fahrer nicht zu überfordern, sollten solche
-					Dienste auch langsam und schrittweise eingeführt werden.
-				</p>
-				<h2 style="font-size: 50px; ">So könnte das Auto der Zukunft aussehen:</h2>
-				<img src="img\auto_der_zukunft.jpg">
+                <h2>Vernetzte Autos</h2>
+                <img src="img\auto_der_zukunft.jpg" alt="Das Auto der Zukunft" style="width: 420px; height: 300px; float: right; margin: 10px;">
+                <p>
+                    Derzeit gibt es keine rechtliche oder allgemein anerkannte Definition der deutschen oder englischen Begriffe "vernetztes Fahrzeug" oder "vernetztes Auto". Im Journal of Data Processing wird das vernetzte Auto wie folgt definiert: Das Automobil der Zukunft
+                    ist ein rollender Computer, der mit der Umwelt, der Infrastruktur und dem Internet vernetzt ist. Dies beinhaltet die Offenlegung einer großen Anzahl personenbezogener Daten. In der Zeitschrift Kriminalistik heißt es: Die Ausstattung
+                    eines Fahrzeugs mit mindestens einem Modul, das die verschiedenen Sensoren und / oder Speicherkapazitäten im Fahrzeug mit mindestens einem anderen Gerät, Netzwerk oder Dienst außerhalb des Fahrzeugs verbindet. Dies umfasst Verbindungen
+                    zum Internet, zu anderen Fahrzeugen (Car-to-Car), zu Häusern (Car-to-Home), zu Herstellern oder anderen Unternehmen (Car-to-Enterprise) oder zu anderen Infrastrukturkomponenten (Car-to-Enterprise) X). "In den letzten Jahren konzentrierten
+                    sich die Bemähungen im Bereich des vernetzten Straßenverkehrs hauptsächlich auf die Bereitstellung der Infrastruktur und die Standardisierung der V2X-Technologie. "Es wird jetzt klar, dass wir darüber hinausgehen, weil in Fahrzeugen
+                    ein immer breiteres Spektrum an Kommunikationstechnologien präsentiert wird, so dass derzeit konkrete Anwendungsszenarien für Endverbraucher im Fokus stehen", sagte Peter Ummenhofer, Leiter des ITS-Geschäfts Einheit bei Kapsch TrafficCom
+                    futurezone. Kapsch war auch auf dem ITS-Weltkongress in Detroit mit einer umfassenden V2X-Vertriebsmanagementlesung vertreten. Ummenhofer zufolge lautete der Tenor des ITS-Weltkongresses, dass kooperative Systeme wie V2X heute als
+                    Basistechnologie gelten. V2X dient als Grundlage für die Erstellung von In-Car-Apps für vernetzte Fahrzeuge oder Verkehrsmanagementlösungen. Autonome Fahrzeuge werden teilweise auch auf V2X basieren.Mit den Innovationen, die V2X bringen
+                    wird, stellt sich die Frage, wie Treiber solche V2X-Dienste überhaupt akzeptieren und ob diese zusätzlichen Funktionen viele, insbesondere ältere Treiber, nicht überwältigen werden. "Das klingt alles viel komplizierter als es tatsächlich
+                    ist", sagt Ummenhofer. "Man muss definitiv kein IT-Techniker sein, um diese Dienste nutzen zu können." Ein Beispiel: In der kalten Jahreszeit fahren Sie auf einer Straße. Die Fahrbahn ist einige Kilometer weiter vereist. Ein Auto,
+                    dessen Sensoren das Glatteis bereits registriert haben, kommt auf Sie zu und warnt mit V2X, dass auf dem nächsten Straßenabschnitt Rutschgefahr besteht. Dies wird dem Fahrer durch einen subtilen Hinweis angezeigt. "Von der gesamten
+                    V2X-Technologie, die dahinter steckt, merkt man kaum etwas als Lenker", fasst Ummenhofer zusammen. Um die Fahrer nicht zu überfordern, sollten solche Dienste auch langsam und schrittweise eingeführt werden.
+                </p>
             </div>
         </section>
 
     </main>
+
     <footer>
         <div>
             <p class="footer ">
