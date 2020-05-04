@@ -18,6 +18,7 @@ footer div p {
 /* Footer links */
 
 footer p.footer {
+    clear: both;
     font-size: 18px;
     font-weight: bold;
     color: #ffffff;
