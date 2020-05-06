@@ -1,3 +1,11 @@
+/*
+ * footer.css
+ *
+ * Der Name sagt es bereits: Hier sind alle Styles für den Fußzeile gespeichert.
+ * Im Gegensatz zur Navigations-Bar ist diese nicht fix, enthält aber auch die Links
+ * zu den anderen Unterseiten.
+*/
+
 footer {
     background-color: #292c2f;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
@@ -15,7 +23,8 @@ footer div p {
 }
 
 
-/* Footer links */
+/* Styles für die Links im Footer
+============================================================================== */
 
 footer p.footer {
     clear: both;

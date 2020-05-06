@@ -1,25 +1,23 @@
+
+
 /*
-== Stylesheet für alle Seiten, oberflächliche  Formatierung ==
-*/
+ * basis.css
+ * 
+ * Diese Datei enthält grundlegende Stylesheets für den Großteil der gesamten Website.
+ * Allgemeine Definitionen wie Schriftart/Größe sind hier enthalten und auch Sytles für ganze Bereiche.
+ */
 
-
-/* === ALL === */
-
-
-/*= reset =*/
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
-
-/*= general =*/
+/* reset
+============================================================================== */
 
 * {
     margin: 0;
     padding: 0;
 }
+
+
+/* general
+============================================================================== */
 
 html {
     font-family: Poppins;
@@ -59,7 +57,8 @@ h4 {
 }
 
 
-/*= section styles =*/
+/* section styles
+============================================================================== */
 
 .subpage_top>div {
     display: flex;
@@ -83,7 +82,8 @@ h4 {
 }
 
 
-/* === INDEX.HTML === */
+/* index.html
+============================================================================== */
 
 main {
     min-height: calc(100vh - 22.8vh);

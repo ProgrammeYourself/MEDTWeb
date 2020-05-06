@@ -1,9 +1,17 @@
+/*
+ * kontakt.css
+ *
+ * Hier sind jene Sytles definiert, die nur die die Kontakt-Seite betreffen, wobei
+ * auch welche von der basis.css verwendet werden.
+ */
+
 fieldset {
 	border: 2px solid black;
 	border-radius: 2px;
 	padding: 10px;
 }
 
+/* Gilt nur für das untere fieldset */
 fieldset:nth-of-type(2) { margin-top: 20px; }
 
 legend {
@@ -11,6 +19,15 @@ legend {
 	font-size: 20px;
 }
 
+.form_description {
+	margin: 0;
+}
+
+/* betrifft:
+	* Eingabefelder
+	* Buttons/Submits etc.
+	* Datumseingaben
+ */
 input, select {
 	border: 1px solid black;
 	padding: 12px 32px;
