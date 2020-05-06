@@ -4,7 +4,7 @@
 <head>
     <title>IT WebBase - Alles rund ums Thema IT!</title>
     <link href="style\zentrale.css" rel="stylesheet">
-	<link href="style\kontakt.css" rel="stylesheet">
+    <link href="style\kontakt.css" rel="stylesheet">
     <meta charset="utf-8">
 </head>
 
@@ -27,78 +27,98 @@
             </ul>
         </nav>
 
-        <fieldset id="fieldset_newsletter">
-            <legend>Newsletter</legend>
-            <span class="fieldset_description"><p>Möchten Sie über alle Änderungen auf dieser Seite informiert werden? So können Sie sich gleich hier unten für unseren Newsletter eintragen. Die News bekommen sie wöchentlich per E-Mail. Jederzeit widerrufbar.</p></span>
+        <section class="subpage_main">
+            <div style="padding: 25px;">
+                <fieldset id="fieldset_newsletter">
+                    <legend>Newsletter</legend>
+                    <span class="fieldset_description">
+                        <p>Möchten Sie über alle Änderungen auf dieser Seite informiert werden? So können Sie sich
+                            gleich hier
+                            unten für unseren Newsletter eintragen. Die News bekommen sie wöchentlich per E-Mail.
+                            Jederzeit
+                            widerrufbar.</p>
+                    </span>
 
-            <form>
-                <table class="table_form">
-                    <tr>
-                        <td><label for="anrede">Andrede *</label></td>
-                        <td>
-                            <select id="anrede">
-                                <option value="herr">Herr</option>
-                                <option value="frau">Frau</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><label for="vn">Vorname *</label></td>
-                        <td><label for="nn">Nachname *</label></td>
-                    </tr>
-                    <tr>
-                        <td><input type="text" id="vn"></td>
-                        <td><input type="text" id="nn"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="input_tel">Telefonnummer</label></td>
-						<td colspan="2"><label for="input_email">Email-Adresse *</label></td>
-                    </tr>
-					<tr>
-						<td><input type="tel" id="input_tel" name="input_tel"></td>
-						<td colspan="2"><input type="email" id="input_email" name="input_email"></td>
-					</tr>
-                    <tr>
-                        <td colspan="2">
-                            <input type="checkbox" id="check_data" name="check_data">
-                            <label for="check_data">Ich nehme hiermit zur Kenntnis, dass meine eingegebenen Daten auf den Servern dieser Website gespeichert werden und für alle Mitarbeiter sichtbar sind.</label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="submit" value="Absenden">
-                            <input type="reset" value="Zurücksetzen">
-                        </td>
-                    </tr>
-                </table>
-            </form>
-            <span class="remark">Alle Felder, die mit einem Sternchen * versehen sind, müssen ausgefüllt werden.</span>
+                    <form>
+                        <table class="table_form">
+                            <tr>
+                                <td><label for="anrede">Andrede *</label></td>
+                                <td>
+                                    <select id="anrede">
+                                        <option value="herr">Herr</option>
+                                        <option value="frau">Frau</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="vn">Vorname *</label></td>
+                                <td><label for="nn">Nachname *</label></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" id="vn"></td>
+                                <td><input type="text" id="nn"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="input_tel">Telefonnummer</label></td>
+                                <td colspan="2"><label for="input_email">Email-Adresse *</label></td>
+                            </tr>
+                            <tr>
+                                <td><input type="tel" id="input_tel" name="input_tel"></td>
+                                <td colspan="2"><input type="email" id="input_email" name="input_email"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <input type="checkbox" id="check_data" name="check_data">
+                                    <label for="check_data">Ich nehme hiermit zur Kenntnis, dass meine eingegebenen
+                                        Daten auf
+                                        den Servern dieser Website gespeichert werden und für alle Mitarbeiter sichtbar
+                                        sind.</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="submit" value="Absenden">
+                                    <input type="reset" value="Zurücksetzen">
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                    <span class="remark">Alle Felder, die mit einem Sternchen * versehen sind, müssen ausgefüllt
+                        werden.</span>
 
-        </fieldset>
+                </fieldset>
 
-        <fieldset id="fieldset_anregungen">
-            <legend>Anregungen/Wünsche/Beschwerden etc.</legend>
-            <span class="fieldset_description"><p>Haben Sie Anregungen/Wünsche/Beschwerden etc.? Schreiben Sie Ihr Feedback bitte doch in das untere Textfeld, und wir kümmern uns darum!</p></span>
+                <fieldset id="fieldset_anregungen">
+                    <legend>Anregungen/Wünsche/Beschwerden etc.</legend>
+                    <span class="fieldset_description">
+                        <p>Haben Sie Anregungen/Wünsche/Beschwerden etc.? Schreiben Sie Ihr Feedback bitte doch in das
+                            untere
+                            Textfeld, und wir kümmern uns darum!</p>
+                    </span>
 
-            <form>
-                <table class="table_form">
-                    <tr>
-                        <td><label for="text_feedback">Ihr Feedback: *</label></td>
-                        <td colspan="2">
-                            <textarea id="text_feedback" name="text_feedback" cols="100" rows="4" style="resize: none;">Ihr Feedback</textarea>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="submit" id="btn_absenden" value="Absenden">
-                            <input type="reset" value="Zurücksetzen">
-                        </td>
-                    </tr>
-                </table>
-            </form>
-            <span class="remark">Alle Felder, die mit einem Sternchen * versehen sind, müssen ausgefüllt werden.</span>
+                    <form>
+                        <table class="table_form">
+                            <tr>
+                                <td><label for="text_feedback">Ihr Feedback: *</label></td>
+                                <td colspan="2">
+                                    <textarea id="text_feedback" name="text_feedback" cols="100" rows="4"
+                                        style="resize: none;">Ihr Feedback</textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="submit" id="btn_absenden" value="Absenden">
+                                    <input type="reset" value="Zurücksetzen">
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                    <span class="remark">Alle Felder, die mit einem Sternchen * versehen sind, müssen ausgefüllt
+                        werden.</span>
+                </fieldset>
+            </div>
+        </section>
 
-        </fieldset>
     </main>
     <footer>
         <div>
