@@ -2,9 +2,9 @@
 <html lang="de">
 
 <head>
-    <title>IT WebBase - Alles rund ums Thema IT!</title>
-    <link href="style\zentrale.css" rel="stylesheet">
-    <link href="style\kontakt.css" rel="stylesheet">
+    <title>IT WebBase - Kontakt</title>
+    <link href="style/zentrale.css" rel="stylesheet">
+    <link href="style/kontakt.css" rel="stylesheet">
     <meta charset="utf-8">
 </head>
 
@@ -29,15 +29,16 @@
 
         <section class="subpage_main">
             <div style="padding: 25px;">
+                <h2>Formulare</h2>
                 <fieldset id="fieldset_newsletter">
                     <legend>Newsletter</legend>
-                    <span class="fieldset_description">
-                        <p>Möchten Sie über alle Änderungen auf dieser Seite informiert werden? So können Sie sich
-                            gleich hier
-                            unten für unseren Newsletter eintragen. Die News bekommen sie wöchentlich per E-Mail.
-                            Jederzeit
-                            widerrufbar.</p>
-                    </span>
+                    <p class="form_description">
+                        Möchten Sie über alle Änderungen auf dieser Seite informiert werden? So können Sie sich
+                        gleich hier
+                        unten für unseren Newsletter eintragen. Die News bekommen sie wöchentlich per E-Mail.
+                        Jederzeit
+                        widerrufbar.
+                    </p>
 
                     <form>
                         <table class="table_form">
@@ -60,11 +61,11 @@
                             </tr>
                             <tr>
                                 <td><label for="input_tel">Telefonnummer</label></td>
-                                <td colspan="2"><label for="input_email">Email-Adresse *</label></td>
+                                <td><label for="input_email">Email-Adresse *</label></td>
                             </tr>
                             <tr>
                                 <td><input type="tel" id="input_tel" name="input_tel"></td>
-                                <td colspan="2"><input type="email" id="input_email" name="input_email"></td>
+                                <td><input type="email" id="input_email" name="input_email"></td>
                             </tr>
                             <tr>
                                 <td colspan="2">
@@ -76,7 +77,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td>
+                                <td colspan="2">
                                     <input type="submit" value="Absenden">
                                     <input type="reset" value="Zurücksetzen">
                                 </td>
@@ -90,23 +91,23 @@
 
                 <fieldset id="fieldset_anregungen">
                     <legend>Anregungen/Wünsche/Beschwerden etc.</legend>
-                    <span class="fieldset_description">
-                        <p>Haben Sie Anregungen/Wünsche/Beschwerden etc.? Schreiben Sie Ihr Feedback bitte doch in das
-                            untere
-                            Textfeld, und wir kümmern uns darum!</p>
-                    </span>
+                    <p class="form_description">
+                        Haben Sie Anregungen/Wünsche/Beschwerden etc.? Schreiben Sie Ihr Feedback bitte doch in das
+                        untere
+                        Textfeld, und wir kümmern uns darum!
+                    </p>
 
                     <form>
                         <table class="table_form">
                             <tr>
                                 <td><label for="text_feedback">Ihr Feedback: *</label></td>
-                                <td colspan="2">
+                                <td>
                                     <textarea id="text_feedback" name="text_feedback" cols="100" rows="4"
                                         style="resize: none;">Ihr Feedback</textarea>
                                 </td>
                             </tr>
                             <tr>
-                                <td>
+                                <td colspan="2">
                                     <input type="submit" id="btn_absenden" value="Absenden">
                                     <input type="reset" value="Zurücksetzen">
                                 </td>
